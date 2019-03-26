@@ -1,0 +1,28 @@
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu{
+    margin: 0;
+    padding: 0;
+    max-width: 640px;
+}
+html,body{
+    color: #333333;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+input{
+    outline: none;
+}
+/* input-placeholder */
+input::-webkit-input-placeholder {
+    color: #cccccc;
+}
+input:-moz-placeholder {
+    color: #cccccc;
+}
+input::-moz-placeholder {
+    color: #cccccc;
+}
+input:-ms-input-placeholder { 
+    color: #cccccc;
+}

@@ -1,0 +1,165 @@
+.content{
+    background-color: #f4f4f4;
+    height: 100%;
+    width: 100%;
+}
+/* 头部 */
+header{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fff;
+    overflow: hidden;
+    color: #333333;
+}
+header a.back_btn{
+    display: block;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+header .back_btn i{
+    display: block;
+    width: 12px;
+    height: 20px;
+    background: url(../img/back_btn.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 10px 14px;
+}
+header a.title{
+    display: block;
+    width: calc(100% - 80px);
+    height: 40px;
+    float: left;
+}
+/* tab */
+.tab_wrap{
+    height: 40px;
+    background-color: #ffffff;
+}
+.tab_wrap .li{
+    height: 40px;
+    line-height: 40px;
+    width: 33%;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    color: #999999;
+}
+.tab_wrap .li.active a{
+    color: #ff5938;
+    padding: 10px 15px;
+    border-bottom: 2px solid #ff5938;
+}
+/* title */
+.title_wrap{
+    height: 30px;
+    line-height: 30px;
+}
+.title_wrap .title{
+    font-size: 14px;
+    margin-left: 15px;
+    color: #999999;
+}
+.title_wrap .more{
+    display: block;
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+.title_wrap .more i{
+    display: block;
+    height: 22px;
+    width: 22px;
+    background: url(../img/more_r.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 4px;
+}
+/* list */
+.list_wrap ul{
+    display: none;
+}
+.list_wrap ul.active{
+    display: block;
+}
+.list_wrap ul li{
+    background: #ffffff;
+    height: 140px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    overflow: hidden;
+}
+.list_wrap ul li.no_data{
+    text-align: center;
+    color: #999999;
+    height: 100px;
+    line-height: 100px;
+}
+.list_wrap ul li p.date_wrap{
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.list_wrap ul li .date_wrap .time{
+    font-size: 10px;
+}
+.list_wrap ul li .date_wrap .status{
+    font-size: 12px;
+    color: #999999;
+    float: right;
+}
+.list_wrap ul li .date_wrap .status.red{
+    color: #ff5938;
+}
+.list_wrap ul li .contant{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.list_wrap ul li .contant .telbill{
+    height: 36px;
+    width: 36px;
+    float: left;
+}
+.list_wrap ul li .contant .wrap{
+    width: calc(100% - 46px);
+    float: left;
+    margin-left: 10px;
+}
+.list_wrap ul li .contant .wrap .name{
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+}
+.list_wrap ul li .contant .wrap .order{
+    font-size: 12px;
+    color: #999999;
+}
+.list_wrap ul li .price_wrap{
+    height: 24px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.list_wrap ul li .price_wrap .btn_wrap{
+    width: 50%;
+    float: right;
+    font-size: 12px;
+}
+.list_wrap ul li .price_wrap .btn_wrap a{
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    width: 60px;
+    border-radius: 2px;
+    text-align: center;
+    color: #999999;
+    border: 1px solid #999999;
+    float: right;
+    margin-left: 10px;
+}
+.list_wrap ul li .price_wrap .btn_wrap a.red{
+    color: #ff5938;
+    border: 1px solid #ff5938;
+}

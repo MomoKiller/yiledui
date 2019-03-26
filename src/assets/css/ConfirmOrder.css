@@ -1,0 +1,132 @@
+.content{
+    background-color: #f4f4f4;
+    height: 100%;
+    width: 100%;
+}
+/* 头部 */
+header{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fff;
+    overflow: hidden;
+}
+header a.back_btn{
+    display: block;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+header .back_btn i{
+    display: block;
+    width: 12px;
+    height: 20px;
+    background: url(../img/back_btn.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 10px 14px;
+}
+header a.title{
+    display: block;
+    width: calc(100% - 80px);
+    height: 40px;
+    float: left;
+}
+
+/* 手机号 */
+.number_wrap{
+    background-color: #ffffff;
+    border-bottom: 1px solid #efefef;
+    height: 75px;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+.number_wrap .title{
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 7px;
+}
+.number_wrap .phone{
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    margin-bottom: 5px;
+}
+/* 兑换内容 */
+.exchange_wrap{
+    background-color: #ffffff;
+}
+.exchange_wrap .title{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    border-bottom: 1px solid #efefef;
+    padding: 0 15px;
+}
+.exchange_wrap .contant{
+    height: 35px;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #efefef;
+    padding: 15px 15px;
+}
+.exchange_wrap .contant .telbill{
+    height: 35px;
+    width: 35px;
+    float: left;
+}
+.exchange_wrap .contant .wrap{
+    width: calc(100% - 55px);
+    float: left;
+    margin-left: 10px;
+}
+.exchange_wrap .contant .wrap .name{
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+.exchange_wrap .contant .wrap .name a,
+.exchange_wrap .contant .wrap .name i{
+    float: left;
+}
+.exchange_wrap .contant .wrap .name .tag{
+    display: block;
+    height: 15px;
+    width: 48px;
+    margin-left: 10px;
+    background: url(../img/tag_flash.png) no-repeat;
+    background-size: 100% 100%;
+}
+.exchange_wrap .contant .wrap .price{
+    font-size: 12px;
+    color: #666666;
+}
+.exchange_wrap .contant .wrap .price span{
+    color: #ff6238;
+}
+.exchange_wrap .point_wrap{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+}
+.exchange_wrap .point_wrap span{
+    color: #ff6238;
+}
+/* 按钮 */
+.btn_wrap{
+    overflow: hidden;
+    margin-top: 15px;
+    padding: 0 18px;
+}
+.btn_wrap .confirm{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ff6238;
+    border-radius: 4px;
+}

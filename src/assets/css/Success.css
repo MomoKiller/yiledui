@@ -1,0 +1,130 @@
+.content{
+    background-color: #f4f4f4;
+    height: 100%;
+    width: 100%;
+}
+/* 头部 */
+header{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fff;
+    overflow: hidden;
+}
+header a.back_btn{
+    display: block;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+header .back_btn i{
+    display: block;
+    width: 12px;
+    height: 20px;
+    background: url(../img/back_btn.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 10px 14px;
+}
+header a.title{
+    display: block;
+    width: calc(100% - 80px);
+    height: 40px;
+    float: left;
+}
+
+/* 主要内容 */
+.main_wrap{
+    height: 270px;
+    background-color: #ffffff;
+    padding: 0 15px;
+    margin-top: 7px;
+    overflow: hidden;
+}
+.main_wrap .info_wrap{
+    height: 170px;
+    overflow: hidden;
+}
+.main_wrap .info_wrap .success{
+    display: block;
+    height: 55px;
+    width: 55px;
+    background: url(../img/success.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 28px auto 0;
+}
+.main_wrap .info_wrap .title{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main_wrap .info_wrap .desc{
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #a1a1a1;
+    letter-spacing: 1.5px;
+}
+.main_wrap .order_wrap{
+    height: 80px;
+    background-color: #fbfbfb;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+}
+.main_wrap .order_wrap img{
+    height: 35px;
+    width: 35px;
+    float: left;
+    margin: 20px 10px 0 15px;
+}
+.main_wrap .order_wrap .wrap{
+    float: left;
+    width: calc(100% - 70px);
+}
+.main_wrap .order_wrap .wrap .title{
+    height: 25px;
+    line-height: 25px;
+    margin-top: 8px;
+}
+.main_wrap .order_wrap .wrap .order{
+    color: #a1a1a1;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+.main_wrap .order_wrap .wrap .time{
+    color: #a1a1a1;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+/* 按钮 */
+.btn_wrap{
+    height: 80px;
+    padding: 0 15px;
+}
+.btn_wrap a{
+    display: block;
+    height: 50px;
+    width: calc(50% - 10px);
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff6238;
+    line-height: 50px;
+    border: 1px solid #ff6238;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.btn_wrap .query_btn{
+    background-color: #ff6238;
+    color: #ffffff;
+}
+.btn_wrap .exchange_btn{
+    float: right;
+}

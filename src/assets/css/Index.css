@@ -1,0 +1,224 @@
+.content{
+    background-color: #f4f4f4;
+    height: 100%;
+    width: 100%;
+}
+/* 头部 */
+header{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fff;
+}
+.main{
+    height: calc(100% - 40px);
+}
+/* 图片轮播 */
+.swipe_wrap{
+    height: 150px;
+    text-align: center;
+    background-color: #fff;
+}
+.swipe_wrap img{
+    height: 150px;
+}
+/* 主入口 */
+.entrance_warp{
+    background-color: #fff;
+    height: 50px;
+    padding: 0 10px;
+}
+.entrance_warp .list{
+    width: calc(50% - 1px);
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 14px;
+}
+.entrance_warp .list:nth-child(1){
+    border-right: 1px solid #e3e3e3;
+}
+.entrance_warp .list i{
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    margin-left: 15px;
+}
+.entrance_warp .list a{
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 10px;
+}
+.entrance_warp .list span{
+    overflow: hidden;
+    display: inline-block;
+    color: #ff6238;
+}
+.entrance_warp .list.ac_point i{
+    background: url(../img/enter_l.png) no-repeat;
+    background-size: 100% 100%;
+}
+.entrance_warp .list.order i{
+    background: url(../img/enter_r.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* TAB切换 */
+.tab_wrap{
+    margin-top: 10px;
+    background-color: #fff;
+    height: 110px;
+    border-bottom: 1px solid #eee;
+}
+.tab_wrap .list{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.tab_wrap .list i{
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 18px auto 10px;
+}
+.tab_wrap .list.exchange i{
+    background: url(../img/tab_1.png) no-repeat;
+    background-size: 50px 50px;
+}
+.tab_wrap .list.draw i{
+    background: url(../img/tab_2.png) no-repeat;
+    background-size: 50px 50px;
+}
+.tab_wrap .list.guess i{
+    background: url(../img/tab_3.png) no-repeat;
+    background-size: 50px 50px;
+}
+.tab_wrap .list.acpoint i{
+    background: url(../img/tab_4.png) no-repeat;
+    background-size: 50px 50px;
+}
+/* 推荐位 */
+.feature_wrap{
+    height: 150px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.feature_wrap .title{
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.feature_wrap .title i{
+    background: url(../img/feature_1.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 34px;
+    height: 15px;
+    margin: -2px 5px;
+}
+.feature_wrap .list_outwrap{
+    height: 80px;
+    overflow: hidden;
+}
+.feature_wrap .list_wrap{
+    height: 100px;
+    overflow-x: auto;
+    position: relative;
+}
+.feature_wrap .pro_list{
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    display: inline-flex;
+    position: absolute;
+}
+.feature_wrap .pro_list li{
+    list-style: none;
+    width: 140px;
+    height: 80px;
+    background-color: #eceffd;
+    border-radius: 4px;
+    float: left;
+    margin-left: 10px;
+}
+.feature_wrap .pro_list li:nth-last-child(1){
+    margin-right: 10px;
+}
+.feature_wrap .pro_list li p.price{
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+.feature_wrap .pro_list li p.desc{
+    height: 20px;
+    line-height: 20px;
+    margin-left: 13px;
+}
+.feature_wrap .pro_list li a.btn{
+    margin-left: 13px;
+    background-color: #a7b7e9;
+    font-size: 10px;
+    color: #ffffff;
+    padding: 2px 10px 3px;
+    display: inline-block;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+/* 产品位 */
+.nav_wrap{
+    background-color: #ffffff;
+    margin-top: 10px;
+    height: 42px;
+    overflow: hidden;
+}
+.nav_wrap .inner_wrap{
+    height: 50px;
+    overflow-x: auto;
+    position: relative;
+}
+.nav{
+    height: 40px;
+    position: absolute;
+    display: inline-flex;
+}
+.nav .list{
+    margin: 0 15px;
+    padding: 10px 0;
+    width: 60px;
+    text-align: center;
+}
+.nav .list.active{
+    font-size: 15px;
+    color: #ff5938;
+    border-bottom: 2px solid #ff5938;
+    padding: 10px 0 8px;
+}
+
+/* 产品位 */
+.product_wrap{
+    background-color: #ffffff;
+    min-height: 220px;
+}
+.product_wrap ul{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.product_wrap ul li{
+    list-style: none;
+    list-style-type: none;
+}
+
+.product_wrap ul.active{
+    display: block;
+}
+.product_wrap ul li.no_data{
+    text-align: center;
+    color: #999999;
+    height: 100px;
+    line-height: 100px;
+}
