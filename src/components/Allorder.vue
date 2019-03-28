@@ -75,7 +75,10 @@
                 </li>
             </ul>
             <ul :class="{active: tabIndex == 2}">
-                <li class="no_data">暂无数据</li>
+                <li class="no_data" v-if="JSON.stringify(drawData) =='{}'">暂无数据</li>
+                <li v-if="JSON.stringify(drawData) !='{}'" v-for="drawItem in drawData">
+                    {{drawItem}}
+                </li>
             </ul>
             <ul :class="{active: tabIndex == 3}">
                 <li class="no_data">暂无数据</li>
@@ -85,18 +88,41 @@
 </template>
 
 <script>
+import { GetApi } from "../assets/common/js/common.js";
+
 export default {
   name: "Allorder",
   data() {
     return {
-      tabIndex: 1           // tab索引
+      tabIndex: 1, // tab索引
+      drawData: {} // 抽奖数据
     };
+  },
+  mounted() {
+    this.getListData();
   },
   methods: {
     // 切换tab
-    tabSwitch: function(tabIndex){
-        if(this.tabIndex != tabIndex)
-        this.tabIndex = tabIndex;
+    tabSwitch: function(tabIndex) {
+      if (this.tabIndex != tabIndex) this.tabIndex = tabIndex;
+    },
+    // 初始化数据
+    getListData: function() {
+      let that = this;
+      let tempUrl = GetApi("searchCategory");
+      let d = {
+        message: '{ categoryTypeFlag: "1" }',
+        businessType: 1
+      };
+      that.$http
+        .jsonp(tempUrl, { params: d })
+        .then(res => {
+          console.log(res);
+          that.drawData = res.body.returnMsg;
+        })
+        .catch(error => {
+          that.drawData = error.returnMsg;
+        });
     }
   }
 };

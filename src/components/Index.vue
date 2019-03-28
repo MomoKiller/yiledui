@@ -114,6 +114,8 @@
 </template>
 
 <script>
+import { GetApi } from "../assets/common/js/common.js";
+
 export default {
   name: "Index",
   data() {
@@ -123,26 +125,25 @@ export default {
         require("../assets/img/swip_1.png"),
         require("../assets/img/swip_1.png")
       ],
-      proIndex: 1       // 产品位索引
+      proIndex: 1 // 产品位索引
     };
   },
-  mounted(){    // 初始化
-    this.getData();
+  mounted() {
+    // 初始化
+    this.getListData();
   },
   methods: {
     // 查看全部订单
-    toOrder: function(){
-        this.$router.push('/allorder');
+    toOrder: function() {
+      this.$router.push("/allorder");
     },
     // 切换产品
-    proSwitch: function(proIndex){
-        if(this.proIndex != proIndex)
-        this.proIndex = proIndex;
+    proSwitch: function(proIndex) {
+      if (this.proIndex != proIndex) this.proIndex = proIndex;
     },
     // 获取数据
-    getData: function(){
-        let that = this;
-        // that.
+    getListData: function() {
+        
     }
   }
 };
@@ -151,4 +152,3 @@ export default {
 <style scoped>
 @import url(../assets/css/Index.css);
 </style>
-
