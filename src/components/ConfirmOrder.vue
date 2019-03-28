@@ -1,9 +1,11 @@
 <template>
     <div class="content">
-        <header>
-            <a class="back_btn"><i></i></a>
-            <a class="title">订单确认</a>
-        </header>
+        <mt-header title="订单确认">
+            <router-link to="/" slot="left">
+                <mt-button icon="back"></mt-button>
+            </router-link>
+            <!-- <mt-button icon="more" slot="right"></mt-button> -->
+        </mt-header>
         <!--  手机号  -->
         <div class="number_wrap">
             <p class="title">手机号码</p>

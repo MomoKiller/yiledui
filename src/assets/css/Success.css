@@ -3,35 +3,6 @@
     height: 100%;
     width: 100%;
 }
-/* 头部 */
-header{
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 16px;
-    background-color: #fff;
-    overflow: hidden;
-}
-header a.back_btn{
-    display: block;
-    height: 40px;
-    width: 40px;
-    float: left;
-}
-header .back_btn i{
-    display: block;
-    width: 12px;
-    height: 20px;
-    background: url(../img/back_btn.png) no-repeat;
-    background-size: 100% 100%;
-    margin: 10px 14px;
-}
-header a.title{
-    display: block;
-    width: calc(100% - 80px);
-    height: 40px;
-    float: left;
-}
 
 /* 主要内容 */
 .main_wrap{

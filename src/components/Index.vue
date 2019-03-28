@@ -126,6 +126,9 @@ export default {
       proIndex: 1       // 产品位索引
     };
   },
+  mounted(){    // 初始化
+    this.getData();
+  },
   methods: {
     // 查看全部订单
     toOrder: function(){
@@ -135,6 +138,11 @@ export default {
     proSwitch: function(proIndex){
         if(this.proIndex != proIndex)
         this.proIndex = proIndex;
+    },
+    // 获取数据
+    getData: function(){
+        let that = this;
+        // that.
     }
   }
 };

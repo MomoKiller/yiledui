@@ -5,7 +5,7 @@
             <router-link to="/" slot="left">
                 <mt-button icon="back"></mt-button>
             </router-link>
-            <mt-button icon="more" slot="right"></mt-button>
+            <!-- <mt-button icon="more" slot="right"></mt-button> -->
         </mt-header>
         <!--  navbar  -->
         <div class="tab_wrap">

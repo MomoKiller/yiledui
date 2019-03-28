@@ -1,9 +1,10 @@
 <template>
     <div class="content">
-        <header>
-            <a class="back_btn"><i></i></a>
-            <a class="title">兑换成功</a>
-        </header>
+        <mt-header title="兑换成功">
+            <router-link to="/" slot="left">
+                <mt-button icon="back"></mt-button>
+            </router-link>
+        </mt-header>
         <!--  主要内容  -->
         <div class="main_wrap">
             <div class="info_wrap">
