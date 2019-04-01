@@ -5,16 +5,16 @@
         <div class="main">
             <!--  图片轮播  -->
             <div class="swipe_wrap">
-                <!-- <mt-swipe :auto="4000" v-for="imgUrl in swipImgData">
-                    <mt-swipe-item>
-                        <img :src="imgUrl"/>
-                    </mt-swipe-item>
-                </mt-swipe> -->
                 <mt-swipe :auto="4000">
-                    <mt-swipe-item><img src="../assets/img/swip_1.png" /></mt-swipe-item>
-                    <mt-swipe-item><img src="../assets/img/swip_1.png" /></mt-swipe-item>
-                    <mt-swipe-item><img src="../assets/img/swip_1.png" /></mt-swipe-item>
+                    <mt-swipe-item v-for="imgUrl in swipImgData" :key="imgUrl">
+                        <img :src="imgUrl" />
+                    </mt-swipe-item>
                 </mt-swipe>
+                <!-- <mt-swipe :auto="4000">
+                    <mt-swipe-item><img src="../assets/img/swip_1.png" /></mt-swipe-item>
+                    <mt-swipe-item><img src="../assets/img/swip_1.png" /></mt-swipe-item>
+                    <mt-swipe-item><img src="../assets/img/swip_1.png" /></mt-swipe-item>
+                </mt-swipe> -->
             </div>
             <!--  主入口  -->
             <div class="entrance_warp">
@@ -142,9 +142,7 @@ export default {
       if (this.proIndex != proIndex) this.proIndex = proIndex;
     },
     // 获取数据
-    getListData: function() {
-        
-    }
+    getListData: function() {}
   }
 };
 </script>
