@@ -6,15 +6,10 @@
             <!--  图片轮播  -->
             <div class="swipe_wrap">
                 <mt-swipe :auto="4000">
-                    <mt-swipe-item v-for="imgUrl in swipImgData" :key="imgUrl">
+                    <mt-swipe-item v-for="(imgUrl,imgIndex) in swipImgData" :key="imgIndex">
                         <img :src="imgUrl" />
                     </mt-swipe-item>
                 </mt-swipe>
-                <!-- <mt-swipe :auto="4000">
-                    <mt-swipe-item><img src="../assets/img/swip_1.png" /></mt-swipe-item>
-                    <mt-swipe-item><img src="../assets/img/swip_1.png" /></mt-swipe-item>
-                    <mt-swipe-item><img src="../assets/img/swip_1.png" /></mt-swipe-item>
-                </mt-swipe> -->
             </div>
             <!--  主入口  -->
             <div class="entrance_warp">

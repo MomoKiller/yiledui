@@ -1,12 +1,3 @@
-.content{
-    background-color: #f4f4f4;
-    height: 100%;
-    width: 100%;
-}
-/* 头部 */
-.main{
-    height: calc(100% - 40px);
-}
 /* 图片轮播 */
 .swipe_wrap{
     height: 150px;

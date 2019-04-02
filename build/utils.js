@@ -49,7 +49,7 @@ exports.cssLoaders = function (options) {
         use: loaders,
         fallback: 'vue-style-loader',
         // 部署到服务器
-        publicPath: '../../../'
+        publicPath: '../../'
       })
     } else {
       return ['vue-style-loader'].concat(loaders)
