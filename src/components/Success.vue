@@ -25,7 +25,7 @@
             </div>
             <!--  按钮  -->
             <div class="btn_wrap">
-                <a class="query_btn">查询订单</a>
+                <a class="query_btn" @click="goOrderDetail()">查询订单</a>
                 <a class="exchange_btn">确认兑换</a>
             </div>
         </div>
@@ -42,6 +42,10 @@ export default {
   methods: {
     goBack: function() {
       this.$router.back(-1);
+    },
+    // 订单详情
+    goOrderDetail: function(code){
+        this.$router.push();
     }
   }
 };
