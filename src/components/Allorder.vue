@@ -86,8 +86,6 @@
 </template>
 
 <script>
-import { GetApi } from "../assets/common/js/common.js";
-import { truncate } from "fs";
 import ComHeader from "@/components/common/Header.vue";
 
 export default {
@@ -114,20 +112,15 @@ export default {
     // 初始化数据
     getListData: function() {
       let that = this;
-      let tempUrl = GetApi("searchCategory");
+      //   let tempUrl = GetApi("searchCategory");
+      let tempUrl = that.common.getApi("searchCategory");
       let d = {
         message: '{ categoryTypeFlag: "1" }',
         businessType: 1
       };
-      that.$http
-        .jsonp(tempUrl, { params: d })
-        .then(res => {
-          console.log(res);
-          that.drawData = res.body.returnMsg;
-        })
-        .catch(error => {
-          that.drawData = error.returnMsg;
-        });
+      that.common.getData(that, tempUrl, d, function(data) {
+        that.drawData = data.returnMsg;
+      });
     },
     goBack: function() {
       this.$router.back(-1);
