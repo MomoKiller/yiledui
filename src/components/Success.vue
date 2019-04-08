@@ -1,11 +1,6 @@
 <template>
     <div class="content">
-        <header>
-            <a class="back_btn">
-                <i @click="goBack"></i>
-            </a>
-            <a class="title">兑换成功</a>
-        </header>
+        <com-header :initTitle="initTitle"></com-header>
         <div class="main">
             <!--  主要内容  -->
             <div class="main_wrap">
@@ -33,10 +28,18 @@
 </template>
 
 <script>
+import ComHeader from "@/components/common/Header.vue"
+
 export default {
   name: "Success",
+  components: { ComHeader },
   data() {
-    return {};
+    return {
+        initTitle: {
+            name: '兑换成功',
+            showBack: true
+        }
+    };
   },
   mounted() {},
   methods: {

@@ -71,7 +71,6 @@
 }
 .tab_wrap .list.draw i{
     background: url(../img/tab_2.png) no-repeat;
-    /* background: url(../img/tab_1.png) no-repeat; */
     background-size: 50px 50px;
 }
 .tab_wrap .list.guess i{

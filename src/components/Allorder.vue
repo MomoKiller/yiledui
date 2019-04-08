@@ -1,12 +1,7 @@
 <template>
     <div class="content">
         <!--  导航标题  -->
-        <header>
-            <a class="back_btn">
-                <i @click="goBack"></i>
-            </a>
-            <a class="title">全部订单</a>
-        </header>
+        <com-header :initTitle="initTitle"></com-header>
         <div class="main">
             <!--  navbar  -->
             <div class="tab_wrap">
@@ -92,13 +87,20 @@
 
 <script>
 import { GetApi } from "../assets/common/js/common.js";
+import { truncate } from "fs";
+import ComHeader from "@/components/common/Header.vue";
 
 export default {
   name: "Allorder",
+  components: { ComHeader },
   data() {
     return {
       tabIndex: 1, // tab索引
-      drawData: {} // 抽奖数据
+      drawData: {}, // 抽奖数据
+      initTitle: {
+        name: "全部订单",
+        showBack: true
+      }
     };
   },
   mounted() {

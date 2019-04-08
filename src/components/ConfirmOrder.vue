@@ -1,11 +1,7 @@
 <template>
     <div class="content">
-        <header>
-            <a class="back_btn">
-                <i @click="goBack"></i>
-            </a>
-            <a class="title">订单确认</a>
-        </header>
+        <!--  头部组件  -->
+        <com-header :initTitle="initTitle"></com-header>
         <div class="main">
             <!--  手机号  -->
             <div class="number_wrap">
@@ -40,10 +36,18 @@
 </template>
 
 <script>
+import ComHeader from '@/components/common/Header.vue'
+
 export default {
   name: "ConfirmOrder",
+  components:{ComHeader},
   data() {
-    return {};
+    return {
+        initTitle: {
+            name: '订单确认',
+            showBack: true
+        }
+    };
   },
   mounted() {},
   methods: {

@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <!--  头部导航  -->
-        <header>易乐兑</header>
+        <com-header :initTitle="initTitle"></com-header>
         <div class="main">
             <!--  图片轮播  -->
             <div class="swipe_wrap">
@@ -110,9 +110,11 @@
 
 <script>
 import { GetApi } from "../assets/common/js/common.js";
+import ComHeader from "@/components/common/Header.vue"
 
 export default {
   name: "Index",
+  components: { ComHeader },
   data() {
     return {
       swipImgData: [
@@ -120,7 +122,11 @@ export default {
         require("../assets/img/swip_1.png"),
         require("../assets/img/swip_1.png")
       ],
-      proIndex: 1 // 产品位索引
+      proIndex: 1, // 产品位索引
+      initTitle: {
+          name: '易乐兑',
+          showBack: false
+      }
     };
   },
   mounted() {
