@@ -43,6 +43,7 @@ export default {
   },
   mounted() {},
   methods: {
+    // 已用组件方法替代
     goBack: function() {
       this.$router.back(-1);
     },

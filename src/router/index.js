@@ -4,7 +4,8 @@ import Index from '@/components/Index'
 import Allorder from '@/components/Allorder'
 import ConfirmOrder from '@/components/ConfirmOrder'
 import Success from '@/components/Success'
-import Header from '@/components/common/Header'
+// import Header from '@/components/common/Header'
+import OrderDetail from '@/components/OrderDetail'
 
 Vue.use(Router)
 
@@ -30,10 +31,15 @@ export default new Router({
       name: 'Success',
       component: Success
     },
+    // {
+    //   path: '/header',
+    //   name: 'Header',
+    //   component: Header
+    // },
     {
-      path: '/header',
-      name: 'Header',
-      component: Header
+      path: '/orderDetail',
+      name: 'OrderDetail',
+      component: OrderDetail
     }
   ]
 })

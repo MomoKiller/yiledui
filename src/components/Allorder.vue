@@ -30,7 +30,7 @@
                             <a class="time">2018-02-12 12:30</a>
                             <a class="status">充值中</a>
                         </p>
-                        <div class="contant">
+                        <div class="contant" v-on:click="goDetail(1)">
                             <img class="telbill" src="../assets/img/product_1.png" />
                             <div class="wrap">
                                 <p class="name">200元全国三网话费</p>
@@ -52,7 +52,7 @@
                             <a class="time">2018-02-12 12:30</a>
                             <a class="status red">充值中</a>
                         </p>
-                        <div class="contant">
+                        <div class="contant" v-on:click="goDetail(2)">
                             <img class="telbill" src="../assets/img/product_1.png" />
                             <div class="wrap">
                                 <p class="name">200元全国三网话费</p>
@@ -122,8 +122,15 @@ export default {
         that.drawData = data.returnMsg;
       });
     },
+    // 已用组件方法替代
     goBack: function() {
       this.$router.back(-1);
+    },
+    // 查看订单详情
+    goDetail: function(orderId) {
+      //   this.$router.push("/orderDetail");
+      // 路由传参
+      this.$router.push({name: "OrderDetail", params: {order: orderId}});
     }
   }
 };

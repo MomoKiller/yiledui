@@ -1,23 +1,23 @@
 <template>
-    <!--  原始头部  -->
-    <header>
-        <div class="head_l">
-            <a class="back_btn" @click="goBack" v-if="initTitle.showBack">
-                <i></i>
-            </a>
-        </div>
-        <a class="title">{{initTitle.name}}</a>
-    </header>
+  <!--  原始头部  -->
+  <header>
+    <div class="head_l">
+      <a class="back_btn" @click="goBack" v-if="initTitle.showBack">
+        <i></i>
+      </a>
+    </div>
+    <a class="title">{{initTitle.name}}</a>
+  </header>
 </template>
 
 <script>
 export default {
   name: "Header",
-  props: ['initTitle'],
+  props: ["initTitle"],
   data() {
     return {
       /* title默认参数
-      initTitle: {      
+      initTitle: {
         name: "易乐兑",
         showBack: false
       }
@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     goBack: function() {
-        this.$router.back(-1);
+      this.$router.back(-1);
     }
   }
 };
