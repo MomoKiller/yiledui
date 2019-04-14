@@ -1,5 +1,5 @@
 <template>
-  <!--  原始头部  -->
+  <!--  头部  -->
   <header>
     <div class="head_l">
       <a class="back_btn" @click="goBack" v-if="initTitle.showBack">

@@ -1,26 +1,28 @@
 <template>
-    <div class="content">
-        <com-header :initTitle="initTitle"></com-header>
-        <div class="main">
-            <div class="message_wrap">
-               路由传递的值： {{orderId}}
-            </div>
-            <div class="message_wrap">
-                {{childMsg}}
-            </div>
-            <!--  引入子组件  -->
-            <pase-value v-on:listenChild="getChildEven"></pase-value>
-        </div>
+  <div class="content">
+    <com-header :initTitle="initTitle"></com-header>
+    <div class="main">
+      <div class="message_wrap">
+        路由传递的值： {{orderId}}
+      </div>
+      <div class="message_wrap">
+        子组件的值： {{childMsg}}
+      </div>
+      <!--  子组件传值  -->
+      <child-com v-on:listenChild="getChildEven"></child-com>
+      <bro-com></bro-com>
     </div>
+  </div>
 </template>
 
 <script>
 import ComHeader from "@/components/common/Header.vue";
-import PaseValue from "@/components/common/PaseValue.vue";
+import ChildCom from "@/components/common/ChildCom.vue";
+import BroCom from "@/components/common/BroCom.vue"
 
 export default {
   name: "OrderDetail",
-  components: { ComHeader, PaseValue },
+  components: { ComHeader, ChildCom, BroCom },
   data() {
     return {
       initTitle: {
