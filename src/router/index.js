@@ -6,6 +6,9 @@ import ConfirmOrder from '@/components/ConfirmOrder'
 import Success from '@/components/Success'
 // import Header from '@/components/common/Header'
 import OrderDetail from '@/components/OrderDetail'
+// vueX 页面
+import Parent from '@/components/vuexTest/Parent'
+import Child from '@/components/vuexTest/Child'
 
 Vue.use(Router)
 
@@ -40,6 +43,17 @@ export default new Router({
       path: '/orderDetail',
       name: 'OrderDetail',
       component: OrderDetail
+    },
+    // vueX 入口
+    {
+      path: '/parent',
+      name: 'Parent',
+      component: Parent
+    },
+    {
+      path: '/child',
+      name: 'Child',
+      component: Child
     }
   ]
 })
