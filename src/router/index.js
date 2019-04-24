@@ -8,7 +8,8 @@ import Success from '@/components/Success'
 import OrderDetail from '@/components/OrderDetail'
 // vueX 页面
 import Parent from '@/components/vuexTest/Parent'
-import Child from '@/components/vuexTest/Child'
+// vueX 联系
+import Tparent from '@/components/vuexTest2/Tparent'
 
 Vue.use(Router)
 
@@ -34,7 +35,8 @@ export default new Router({
       name: 'Success',
       component: Success
     },
-    // {
+    // 已经作为一个组件
+    // {    
     //   path: '/header',
     //   name: 'Header',
     //   component: Header
@@ -51,9 +53,9 @@ export default new Router({
       component: Parent
     },
     {
-      path: '/child',
-      name: 'Child',
-      component: Child
+      path: '/tparent',
+      name: 'Tparent',
+      component: Tparent
     }
   ]
 })
